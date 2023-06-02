@@ -1,0 +1,96 @@
+.info {
+    position: relative;
+    height: 100vh;
+}
+.info__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    height: max-content;
+}
+/*  */
+.info_content-img .name {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.info_content-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* detail */
+.info_content-detail {
+    margin-top: 30px;
+}
+.info_content-detail .form_group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.info_content-detail label {
+    margin-right: 20px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.info_content-detail .form_group input {
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 7px;
+    width: 500px;
+    outline: none;
+    transition: all 1s;
+    font-size: 15px;
+    border: 1px solid #000;
+}
+input[type="file"] {
+    border: 1px solid #000;
+    height: 100%;
+}
+input:focus {
+    transition: all 1s;
+    color: #fff;
+    background: #000;
+}
+input::selection {
+    color: red;
+}
+.btn-save {
+    background: #9a9a9a;
+    padding: 10px 40px;
+    border: none;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+.btn-save:hover {
+    background: #e09431b3;
+    color: #fff;
+    transition: 0.5s;
+}
+/*  */
+.photo_avt {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.photo_avt .thumnail_user {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
